@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="./" />
+    <title>Weird JS</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <textarea id="input" class="field" placeholder="Write some JavaScript code, click 'Browse' button to upload a file or drag & drop it here..."></textarea>
+
+    <div class="buttons">
+      <label for="browse" class="button">Browse</label>
+      <input type="file" id="browse" accept="text/javascript" hidden />
+      <button id="parse" class="button" disabled>Parse</button>
+
+      <button id="copy" class="button" disabled>Copy</button>
+      <a id="download" download="output.js" class="button" disabled>Download</a>
+    </div>
+
+    <code id="output" class="field"></code>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
